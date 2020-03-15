@@ -1,0 +1,47 @@
+{
+  "name": "serializer-js",
+  "version": "1.0.0",
+  "description": "A simple serializer for api response",
+  "main": "lib/index.ts",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prepublish": "rm -rf lib && tsc",
+    "test": "jest --config jestconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgid123/serializer-js.git"
+  },
+  "keywords": [
+    "serializer"
+  ],
+  "author": "Alpha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zgid123/serializer-js/issues"
+  },
+  "homepage": "https://github.com/zgid123/serializer-js#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "eslint": "^6.8.0",
+    "eslint-config-typescript": "^3.0.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.8",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
