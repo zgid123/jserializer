@@ -2,7 +2,7 @@
   "name": "jserializer",
   "version": "1.0.1",
   "description": "A simple serializer for api response",
-  "main": "lib/index.ts",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "prepublish": "rm -rf lib && tsc",

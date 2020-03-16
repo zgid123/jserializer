@@ -6,14 +6,12 @@ export interface IOptProps {
 
 export type TAttr = string | IOptProps | Function | undefined;
 
-function attr(): Function;
-function attr(inverseColumn: string): Function;
-function attr(opt: Function): Function;
-function attr(opt: IOptProps): Function;
-function attr(opt: TAttr = undefined): Function {
+export function attr(): Function;
+export function attr(inverseColumn: string): Function;
+export function attr(opt: Function): Function;
+export function attr(opt: IOptProps): Function;
+export function attr(opt: TAttr = undefined): Function {
   return function (target: any, key: string) {
     target[key] = opt;
   };
 }
-
-export default attr;

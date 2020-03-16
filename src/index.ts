@@ -1,4 +1,2 @@
-import attr from './decorators/attr';
-import Serializer from './serializer';
-
-export { attr, Serializer };
+export { attr } from './decorators/attr';
+export { Serializer } from './serializer';

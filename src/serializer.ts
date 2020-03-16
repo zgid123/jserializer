@@ -15,7 +15,7 @@ const parseData = (resource: any, attrName: string, parser: any) => {
   }
 };
 
-class Serializer<T> {
+export class Serializer<T> {
   private _resources: T | T[];
 
   constructor(resources: T);
