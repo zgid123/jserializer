@@ -1,6 +1,6 @@
 {
   "name": "jserializer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple serializer for api response",
   "main": "lib/index.ts",
   "types": "lib/index.d.ts",
